@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f6f9;
+}
+
+.intro__img {
+  max-width: 100%;
+  height: 300px;
+  background: url(../../img/question.png) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  margin-bottom: 50px;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 150px;
+}
+
+.FTL {
+  width: 300px;
+  height: 600px;
+  background-color: #9ba4b43f;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.FTL_heading {
+  font-family: "Raleway-Bold";
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.FTL_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+
+  padding: 0 15px;
+}
+
+.FTL img {
+  width: 100%;
+  /* box-shadow: 2px 1px 6px 5px black; */
+}
+
+.FTL_desc p {
+  font-family: "Raleway";
+  size: 8px;
+}
+
+.FTL:hover,
+.LTL:hover {
+  box-shadow: 2px 3px 10px 2px #14274e;
+  cursor: pointer;
+}
+
+.LTL {
+  width: 300px;
+  height: 600px;
+  background-color: #9ba4b43f;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.LTL_heading {
+  font-family: "Raleway-Bold";
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.LTL_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+
+  padding: 0 15px;
+}
+
+.LTL img {
+  width: 100%;
+}
+
+.LTL_desc p {
+  font-family: "Raleway";
+  size: 8px;
+}
+
+/* ADVANTAGES */
+
+.text {
+  margin: 40px 0;
+}
+
+.advantages__title {
+  font-family: "Roboto-Regular";
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__block {
+  height: 420px;
+  padding: 20px;
+  text-align: right;
+  border-right: 1px solid #14274e;
+}
+
+.block_right {
+  border-right: none;
+  border-left: 1px solid #14274e;
+  text-align: left;
+}
+
+/* ADVANTAGES */
+
+@media (max-width: 800px) {
+  .advantages {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .advantages__block,
+  .block_right {
+    text-align: center;
+    border: none;
+  }
+}
